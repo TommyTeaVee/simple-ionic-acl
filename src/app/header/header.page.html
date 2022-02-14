@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+     Choose login option
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/admin-login']" expand="block" color="primary">Admin </ion-button>
+
+        <!-- <span class="divider line one-line">or</span> -->
+        <p style="text-align: center;
+        font-weight: 900;">or</p>
+
+        <ion-button [routerLink]="['/user-login']" expand="block" color="danger">User</ion-button>
+        <span  [routerLink]="['/registration']" class="already Create">Create Account</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
